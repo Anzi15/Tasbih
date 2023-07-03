@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/14c41c795b.js" crossorigin="anonymous"></script>
+
+       <!-- my stylings -->
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="nav.css">
+       <title>Tasbeeh Counter</title>
+</head>
+<body>
+    <!-- hamburger navbar -->
+    <div class="navbuger">
+      <div class="heading">
+        <img draggable="false" style="display: block;" src="https://i.ibb.co/3fBXZhk/Tasbih-png-free-image-480x480-removebg-preview.png" style="top: 1rem;" alt="Logo" width="50" alt="logo">
+        <span>Tasbih counter</span>
+    </div>
+      <label class="menu-button-wrapper" for="">
+        <input type="checkbox" class="menu-button">
+        <div class="icon-wrapper">
+          <label class="hamburger">
+            <input class="hamburger-input" type="checkbox">
+            <span class="hamburger-line first"></span>
+            <span class="hamburger-line second"></span>
+            <span class="hamburger-line third"></span>
+          </label>
+        </div>
+        <div class="item-list">
+          <div class="togleLinks"><a href="#">Dikr</a></div> 
+          <div  class="togleLinks"><button>Reset</button></div> 
+          <div class="togleLinks"><a target="_blank" href="https://instagram.com/lemme.code">greet👋🏼</a></div> 
+          <div class="togleLinks"><a href="#">Customize</a></div> 
+        </div>
+      </label>
+    </div>
+
+    <div class="display">
+      <input type="text" name="" id="screen" readonly>
+    </div>
+
+    <div class="buttons">
+      <button id="up"><i class="fa-sharp fa-solid fa-sort-up fa-2xl"></i></button>
+    </div>
+
+    <!-- my scripting -->
+    <script src="script.js"></script>
+</body>
+</html>
