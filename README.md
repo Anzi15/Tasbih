@@ -27,9 +27,6 @@ Contributions to the Tasbih Counter project are highly welcome! If you have any 
 4. Push to the branch: `git push origin feature/new-feature`.
 5. Submit a pull request detailing your changes.
 
-## License
-This project is licensed under the [License Name] license. Please review the [LICENSE](LICENSE) file for more information.
-
 ## Contact
 For any inquiries or suggestions, feel free to reach out to me at [Your Email Address]. Connect with me on [LinkedIn/Twitter/Other Social Media] for updates on this project and other exciting developments.
 
