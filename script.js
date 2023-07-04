@@ -14,3 +14,20 @@ btn.addEventListener('click', ()=>{
     localStorage.removeItem('dikr');
     localStorage.setItem('dikr',count)
 });
+
+//reseting value 
+function alertReset(){
+    document.querySelector('body').style.zIndex = "0";
+    document.querySelector('#alertOverlay').style.display = "block";
+    document.querySelector('#alertCard').style.display = "block";
+}
+function reset(){
+    localStorage.removeItem('dikr');
+    location.reload()
+    document.querySelector('#alertOverlay').style.display = "none";
+    document.querySelector('#alertCard').style.display = "none";
+}
+function cancel(){
+    document.querySelector('#alertOverlay').style.display = "none";
+    document.querySelector('#alertCard').style.display = "none";
+}

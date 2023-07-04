@@ -22,8 +22,8 @@
         <img draggable="false" style="display: block;" src="https://i.ibb.co/3fBXZhk/Tasbih-png-free-image-480x480-removebg-preview.png" style="top: 1rem;" alt="Logo" width="50" alt="logo">
         <span>Tasbih counter</span>
     </div>
-      <label class="menu-button-wrapper" for="">
-        <input type="checkbox" class="menu-button">
+    <label class="menu-button-wrapper" for="">
+      <input type="checkbox" class="menu-button">
         <div class="icon-wrapper">
           <label class="hamburger">
             <input class="hamburger-input" type="checkbox">
@@ -32,15 +32,34 @@
             <span class="hamburger-line third"></span>
           </label>
         </div>
+        
+        
         <div class="item-list">
-          <div class="togleLinks"><a href="#">Dikr</a></div> 
-          <div  class="togleLinks"><button>Reset</button></div> 
-          <div class="togleLinks"><a target="_blank" href="https://instagram.com/lemme.code">greet👋🏼</a></div> 
-          <div class="togleLinks"><a href="#">Customize</a></div> 
+          <div class="togleLinks"><a href="#">Azkar Menu</a></div> 
+          <div class="togleLinks"><a href="#">Config</a></div> 
+          <div  class="togleLinks"><button onclick="alertReset()">Reset</button></div> 
+          <div class="togleLinks"><a target="_blank" href="https://instagram.com/lemme.code">greet us👋🏼</a></div> 
         </div>
       </label>
     </div>
+    <div id="alertOverlay"></div>
+    <div>
 
+      <!-- reset alert -->
+      <div id="alertCard">
+        <div class="alertContent">
+          <h3>Alert !!</h3>
+          <p>Are you sure to reset your <b>Tasbih Count</b> back to zero if yes you can do that with the reset button else, click cancel to go back .. </p>
+          <br>
+          <div class="Alertbtn">
+            <button id="resetAlert" onclick="reset()">Reset</button>
+            <button id="Cancel" onclick="cancel()">Cancel</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
     <div class="display">
       <input type="text" name="" id="screen" readonly>
     </div>
@@ -50,6 +69,7 @@
     </div>
 
     <!-- my scripting -->
+    <script src="hadees.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

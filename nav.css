@@ -69,8 +69,9 @@
       background-color: transparent;
       color: #fff;
       /* margin: .5rem; */
-      width: auto;
-      left: 50%;
+
+      width: 2rem !important;
+      left: 0%;
       padding: 15px 0;
       text-align: left;
       border-radius: 100px;
@@ -121,16 +122,15 @@
   }
   
 .navbuger{
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     padding-right: .5rem;
 }  
-.togleLinks{
-    margin: .5rem;
-}
+
 .togleLinks a{
+  /* width: 6rem !important; */
     text-decoration: none!important ;
     color: white;
 }
@@ -139,4 +139,15 @@
     background-color: transparent;
     border: none;
     padding: 0;
+}
+.togleLinks a:hover, .togleLinks button:hover{
+  cursor: pointer;
+  color: #00EA86;
+}
+.item-list, .togleLinks,.togleLinks a{
+  height: 24px;
+  width: 100px !important;
+}
+body{
+  max-width: 99vw !important;
 }

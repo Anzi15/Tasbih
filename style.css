@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gruppo&family=Inter:wght@100;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;500;600;800;900;1000&family=Nunito:wght@200;300;400;500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'nunito';
+}
 body{
-  width: 100vw;
-  height: 100vh;
+  width: 98vw;
+  height: 99vh;
   max-width: 100% !important;
   max-height: 100% !important;
   background-color: #111111;
@@ -41,6 +46,7 @@ body{
 }
 
 /* button setup */
+
 .buttons{
   display: grid;
   place-items: center;
@@ -63,4 +69,108 @@ body{
 #up:active{
   background-color: #007543;
   border: 5px solid #00EA86;
+}
+
+/* scroll bar  */
+::-webkit-scrollbar{
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #01301C;
+  border-radius: 1rem;
+  width: 8px !important; /* Adjust the width as needed */
+  height: 4rem !important; /* Adjust the height as needed */
+}
+
+/* reset alert */
+#resetAlert{
+  z-index: 1000 ;
+  display: flex;
+  position: absolute;
+  left: 7% !important;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#alertCard {
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#alertOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the blur */
+  backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+  z-index: 100; /* Ensure the overlay is on top of other elements */
+  display: none;
+}
+
+.alertContent {
+  text-align: center;
+}
+
+/* making it responsive */
+@media (max-width: 768px) {
+  #alertCard {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 769px) {
+  #alertCard {
+    width: 60%;
+    max-width: 600px;
+  }
+}
+
+/* reset buttons setup */
+.Alertbtn{
+  width: inherit;
+  display: flex;
+  justify-content: flex-end;
+
+}
+#resetAlert{
+display: block;
+}
+#resetAlert{
+  border: 2px solid #ef233c;
+  color: #ef233c;
+  background: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 780;
+}
+#resetAlert:hover,#resetAlert:active{
+  font-weight: 500; 
+  background:#EF233C ;
+  color: white;
+}
+#Cancel{
+  border: 2px solid #514F59;
+  color: #514F59;
+  background: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 780;
+}
+#Cancel:hover,#Cancel:active{
+  background:#514F59 ;
+  font-weight: 500;
+  color: white;
 }
