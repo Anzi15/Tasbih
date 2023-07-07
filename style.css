@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gruppo&family=Inter:wght@100;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;500;600;800;900;1000&family=Nunito:wght@200;300;400;500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
-  font-family: 'nunito';
+  font-family: 'nunito' !important;
 }
 body{
   width: 98vw;
@@ -23,8 +23,6 @@ body{
 .heading img{
   background-blend-mode: multiply;
 }
-
-
 /* screen setup */
 .display{
   height: 55%;
@@ -43,6 +41,7 @@ body{
 }
 #screen::selection{
   background-color: #01301C;
+  color: white;
 }
 
 /* button setup */
@@ -52,19 +51,25 @@ body{
   place-items: center;
 }
 #up{
+  padding-top: 1rem;
+  transform: rotate(180deg);
   height: 13rem;
   width: 13rem;
   background-color: #01301C;
   color: #00EA86;
   font-size: 4rem;
   border-radius: 50%;
-  padding-top: 2.2rem;
+  /* padding-top: 2.2rem; */
   outline: none;
   border: 5px solid #111111;
   transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 10ms;
     transition-property: all;
+}
+#up img{
+  width: 10rem;
+  transform: rotate(180deg);
 }
 #up:active{
   background-color: #007543;

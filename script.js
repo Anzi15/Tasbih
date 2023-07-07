@@ -31,3 +31,7 @@ function cancel(){
     document.querySelector('#alertOverlay').style.display = "none";
     document.querySelector('#alertCard').style.display = "none";
 }
+
+if(localStorage.getItem('oldUser')== null){
+    location.replace('features/wellcome/wellcome.html')
+}
