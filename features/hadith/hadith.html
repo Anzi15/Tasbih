@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hadiths</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav>
+        <button onclick="show()">
+            <img src="../../assets/svgs/hamburger.svg" alt="">
+        </button>
+    </nav>
+    <div id="Container">
+
+    <div id="hadithNav">
+        <div class="back">
+                <button><a href="../../index.html"><img src="../../assets/svgs/house-white.svg" alt=""></a></button>
+                <button onclick="hide()">x</button> </div>
+        <div class="btns">
+            <div><button onclick="active(btn1)" id="btn1">Hadith 1</button></div>
+            <div><button onclick="active(btn2)" id="btn2">Hadith 2</button></div>
+            <div><button onclick="active(btn3)" id="btn3">Hadith 3</button></div>
+            <div><button onclick="active(btn4)" id="btn4">Hadith 4</button></div>
+            <div><button onclick="active(btn5)" id="btn5">Hadith 5</button></div>
+            <div><button onclick="active(btn6)" id="btn6">Hadith 6</button></div>
+            <div><button onclick="active(btn7)" id="btn7">Hadith 7</button></div>
+            <div><button onclick="active(btn8)" id="btn8">Hadith 8</button></div>
+            <div><button onclick="active(btn9)" id="btn9">Hadith 9</button></div>
+            <div><button onclick="active(btn10)" id="btn10">Hadith 10</button></div>
+            <div><button onclick="active(btn11)" id="btn11">Hadith 11</button></div>
+            <div><button onclick="active(btn12)" id="btn12">Hadith 12</button></div>
+            <div><button onclick="active(btn13)" id="btn13">Hadith 13</button></div>
+            <div><button onclick="active(btn14)" id="btn14">Hadith 14</button></div>
+        </div>
+    </div>
+        <div id="textarea">
+            <div id="refrence"></div>
+            <div id="hadith"></div>
+        </div>
+    </div>
+    <script src="hadith.js"></script>
 </body>
 </html>

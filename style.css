@@ -62,19 +62,34 @@ body{
   /* padding-top: 2.2rem; */
   outline: none;
   border: 5px solid #111111;
-  transition-duration: 0.5s;
-    transition-timing-function: ease;
-    transition-delay: 10ms;
-    transition-property: all;
+  transition: background-color ease 10ms;
 }
 #up img{
   width: 10rem;
   transform: rotate(180deg);
 }
-#up:active{
-  background-color: #007543;
-  border: 5px solid #00EA86;
+/* #up:active{
+  /* transition: background-color 10ms ease 50ms;
+  /* transition: boder 0.5s ease 10ms; */
+  /* background-color: #007543;
+  border: 5px solid #00EA86;  
+  animation-name: up;
+  animation-duration: 20000ms;
 }
+@keyframes up {
+  0%{
+    background-color: #01301C;
+    border: 5px solid #111111;
+  }
+  50%{
+    background-color: #007543;
+    border: 5px solid #00EA86;
+  }
+  100%{
+    background-color: #01301C;
+    border: 5px solid #111111;
+  } */
+
 
 /* scroll bar  */
 ::-webkit-scrollbar{
@@ -95,6 +110,7 @@ body{
   left: 7% !important;
   align-items: center;
   justify-content: center;
+  transition: all;
 }
 
 

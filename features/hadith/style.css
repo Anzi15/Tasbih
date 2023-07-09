@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gruppo&family=Inter:wght@100;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;500;600;800;900;1000&family=Nunito:wght@200;300;400;500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    width: 99vw;
+    height: 99vh;
+    overflow: hidden;
+}
+
+/* setting the nav */
+nav{
+    width: inherit;
+    height: 45px;
+    display: none;
+}
+.back{
+    display: flex;
+    margin-left: 15px;
+    width: 11rem;
+    text-align: right;
+    font-size: xx-large;
+}
+@media (max-width: 620px) {
+    nav{
+        display: flex;
+        justify-items: flex-start;
+    }
+    #hadithNav{
+        position: absolute;
+        top: 0;
+        z-index: 998;
+        display: none;
+    }
+    .back button:nth-child(2){
+        display: block !important;
+    }
+    .back{
+        justify-content: space-between;
+    }
+    #textarea{
+        margin-top: 30% !important;
+        padding-top: 4rem;
+        width: auto;
+        margin: 0 !important;
+        margin-top: 1rem;
+        padding: 3rem !important;
+        margin: 1rem;
+    }
+}
+#hadithNav{
+    margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: #1C1C1C;
+    height: 100vh;
+}
+button img{
+    z-index: 999;
+    width: 50px;
+}
+.back button:nth-child(2){
+    display: none ;
+}
+.back button:nth-child(1) img{
+    margin-top: 1rem;
+    width: 25px;
+}
+.back button{
+    font-family: 'nunito';
+    color: white;
+    font-size: xx-large;
+}
+button{
+    user-select: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* seting up btns in nav */
+.btns{
+    color: white;
+    margin-top: 2rem;
+    height: 99vh;
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.507);
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.685);;
+}
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+    margin: 10px;
+    background-color: transparent;
+}
+  ::-webkit-scrollbar-corner{
+    background-color: transparent;
+}
+  ::-webkit-scrollbar-button{
+    background-color: transparent;
+}
+.btns div button{
+    font-size: 1rem;
+    color: inherit;
+}
+
+/* setting text area */
+#textarea{
+
+    /* display: block; */
+    height: 99vh;
+    /* padding-top: 2rem; */
+    overflow: scroll;
+    color: white !important;
+}
+#refrence{
+    font-family: 'nunito';
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+#hadith{
+    height: auto;
+    font-family: 'nunito';
+    word-spacing: 2.5px;
+
+    
+}
+#Container{
+    display: flex !important;
+}
+#hadithnav{
+    margin-right: 2rem;
+    height: 100vh;
+    background-color: aliceblue;
+    width: 10rem !important;
+}
+#textarea{
+    width: 35rem;
+    margin: 7rem;    margin: 5rem;
+    height: 100vh;
+}
+#hadith::selection,#refrence::selection{
+    background-color: #007543;
+}
