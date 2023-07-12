@@ -59,6 +59,7 @@
     display: inline-block;
     
     .item-list {
+      z-index: 887;
         /* margin: 1rem; */
       position: absolute;
       padding: 10rem;
@@ -84,6 +85,7 @@
         cursor: pointer;
       }
     }
+
     
     .menu-button {
       position: absolute;
@@ -140,10 +142,7 @@
     border: none;
     padding: 0;
 }
-.togleLinks a:hover, .togleLinks button:hover{
-  cursor: pointer;
-  color: #00EA86;
-}
+
 .item-list, .togleLinks,.togleLinks a{
   height: 24px;
   width: 100px !important;

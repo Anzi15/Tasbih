@@ -82,24 +82,6 @@ const hadiths = [
     ];
 
 
-function active(id){
-  btn1.style.color='white';
-  btn2.style.color='white';
-  btn3.style.color='white';
-  btn4.style.color='white';
-  btn5.style.color='white';
-  btn6.style.color='white';
-  btn7.style.color='white';
-  btn8.style.color='white';
-  btn9.style.color='white';
-  btn10.style.color='white';
-  btn11.style.color='white';
-  btn12.style.color='white';
-  btn13.style.color='white';
-  btn14.style.color='white';
-  document.querySelector('.btns').style.color='white';
-  id.style.color = '#00EA86';
-}
 
 btn1.addEventListener('click',()=>{
   hadithArea.textContent = hadiths[0].text;
@@ -162,5 +144,4 @@ btn14.addEventListener('click',()=>{
 if(hadithArea.textContent==''||referenceArea.textContent==''){
   hadithArea.textContent = hadiths[0].text;
   referenceArea.textContent = hadiths[0].reference;
-  btn1.style.color="#00EA86"
 }

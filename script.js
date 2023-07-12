@@ -8,16 +8,6 @@ if(localStorage.getItem('dikr')==null){
 screen.value = localStorage.getItem('dikr');
 
 btn.addEventListener('click', ()=>{
-    setTimeout(() => {
-        btn.style.backgroundColor='#007543';
-        btn.style.borderColor='#00EA86';
-    }, 200);
-    setTimeout(() => {
-        btn.style.backgroundColor='#01301C';
-        btn.style.borderColor=' #111111';
-        btn.style.transition='border ease-in 100ms';
-        btn.style.transition='background ease-in 100ms';
-    }, 400);
     count = localStorage.getItem('dikr');
     count++ 
     screen.value = count

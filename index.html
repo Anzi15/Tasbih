@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- bootstrap -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-      
-      <!-- font awesome -->
-      <script src="https://kit.fontawesome.com/89abfb90b4.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
       <!-- my stylings -->
        <link rel="stylesheet" href="style.css">
        <link rel="stylesheet" href="nav.css">
@@ -34,16 +31,15 @@
         
         
         <div class="item-list">
-          <div class="togleLinks"><a href="features/customize/customize.html">Customize</a></div> 
-          <div class="togleLinks"><a href="features/hadith/hadith.html">Hadiths</a></div> 
-          <div  class="togleLinks"><button onclick="alertReset()">Reset</button></div> 
-          <div class="togleLinks"><a target="_blank" href="https://instagram.com/lemme.code">greet us👋🏼</a></div> 
+          <div class="togleLinks"><button onmouseover="linksTheme(link1)" onmouseout="deColor(link1)" > <a id="link1" href="features/customize/customize.html">Customize</a></div> 
+          <div class="togleLinks"><button onmouseover="linksTheme(link2)" onmouseout="deColor(link2)"> <a id="link2"  href="features/hadith/hadith.html">Hadiths</a></div> 
+          <div class="togleLinks"><button  onmouseover="linksTheme(link3)"  onmouseout="deColor(link3)" id="link3"  onclick="alertReset()">Reset</button></div> 
+          <div class="togleLinks"> <button  onmouseover="linksTheme(link4)" onmouseout="deColor(link4)"><a id="link4"  target="_blank" href="https://instagram.com/lemme.code">greet us👋🏼</a></div> 
         </div>
       </label>
     </div>
     <div id="alertOverlay"></div>
     <div>
-
       <!-- reset alert -->
       <div id="alertCard">
         <div class="alertContent">
@@ -60,15 +56,18 @@
     </div>
     
     <div class="display">
+      <div class="displayGlass"></div>
       <input type="text" name="" id="screen" readonly>
     </div>
-
+    
     <div class="buttons">
-      <button id="up"><img src="assets/svgs/up-scale.svg" alt=""></button>
+      <button id="up">
+        
+      </button>
     </div>
-
+    
     <!-- my scripting -->
-    <script src="https://kit.fontawesome.com/14c41c795b.js" crossorigin="anonymous"></script>
+    <script src="customization.js"></script>
     <script src="script.js"></script>
-</body>
-</html>
+  </body>
+  </html>

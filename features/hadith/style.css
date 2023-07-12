@@ -149,5 +149,5 @@ button{
     height: 100vh;
 }
 #hadith::selection,#refrence::selection{
-    background-color: #007543;
+    background-color: grey;
 }

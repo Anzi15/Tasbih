@@ -30,8 +30,8 @@ body{
   place-items: center;
 }
 #screen{
+  user-select: none !important;
   width: 90%;
-  height: auto;
   font-size: 7rem;
   border: none;
   outline: none;
@@ -39,9 +39,12 @@ body{
   background-color: #111111;
   color: white;  
 }
-#screen::selection{
-  background-color: #01301C;
-  color: white;
+.displayGlass{
+  width: 90%;
+  height: 40% !important;
+  position: absolute;
+  background: transparent;
+  opacity: 0;
 }
 
 /* button setup */
@@ -51,46 +54,18 @@ body{
   place-items: center;
 }
 #up{
-  padding-top: 1rem;
-  transform: rotate(180deg);
+  font-size: 5rem;
   height: 13rem;
   width: 13rem;
-  background-color: #01301C;
-  color: #00EA86;
-  font-size: 4rem;
+  /* background-color: #01301C; */
+  background: #111111;
+  font-size: 8rem;
   border-radius: 50%;
-  /* padding-top: 2.2rem; */
+  padding-bottom: 2rem;
   outline: none;
   border: 5px solid #111111;
   transition: background-color ease 10ms;
 }
-#up img{
-  width: 10rem;
-  transform: rotate(180deg);
-}
-/* #up:active{
-  /* transition: background-color 10ms ease 50ms;
-  /* transition: boder 0.5s ease 10ms; */
-  /* background-color: #007543;
-  border: 5px solid #00EA86;  
-  animation-name: up;
-  animation-duration: 20000ms;
-}
-@keyframes up {
-  0%{
-    background-color: #01301C;
-    border: 5px solid #111111;
-  }
-  50%{
-    background-color: #007543;
-    border: 5px solid #00EA86;
-  }
-  100%{
-    background-color: #01301C;
-    border: 5px solid #111111;
-  } */
-
-
 /* scroll bar  */
 ::-webkit-scrollbar{
   background-color: transparent;
@@ -115,7 +90,7 @@ body{
 
 
 #alertCard {
-  z-index: 1000;
+  z-index: 999;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,7 +111,7 @@ body{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the blur */
   backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
-  z-index: 100; /* Ensure the overlay is on top of other elements */
+  z-index: 888; /* Ensure the overlay is on top of other elements */
   display: none;
 }
 
