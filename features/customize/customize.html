@@ -3,26 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Customize</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <a href="../../index.html"><img class="homeBtn" src="../../assets/svgs/house-white.svg" alt=""></a>
+        <button onclick="location.replace('../../index.html')">Done !</button>
+    </nav>
+    <hr>
+    <br>
     <div class="container">
         <div class="heading">
     
         </div>
-
         <div class="btns">
-            <div class="btn"><button onclick="localStorage.setItem('theme','default'); location.reload()">Default</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','pureSouls'); location.reload()">Pure Souls</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','blueOcean'); location.reload()" >Blue Ocean</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','sunsetSerenade'); location.reload()">Sunset Serenade</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','earthyTones'); location.reload()">Earthy Tones</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','midnightDreams'); location.reload()">Midnight Dreams</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','goldenSands'); location.reload()">Golden Sands</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','roseGarden'); location.reload()">Rose Garden</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','monochromeMinimalism'); location.reload()">Monochrome Minimalism</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','autumnHarvest'); location.reload()">Autumn Harvest</button></div>
-            <div class="btn"><button onclick="localStorage.setItem('theme','forgotenMemories'); location.reload()">Forgoten Memories</button></div>
+            <div class="btn">
+                <div class="themeName">
+                    Default Green
+                </div>
+                <button onclick="localStorage.setItem('theme','default'); location.reload()">
+                    <img id="themeBtn0" src="../../assets/imgs/upcaled/tumb_default_green-transformed.png" alt="" draggable="false">
+                    <div class="selected">
+                        <div id="select1">Default</div>
+                    </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName">
+                    Pure Souls
+                </div>
+                <button onclick="localStorage.setItem('theme','pureSouls'); location.reload()">
+                <img id="themeBtn1" src="../../assets/imgs/upcaled/tumb_pure_souls-RgNxngDmt-transformed.png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select2">Selected</div>
+                </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName">
+                    Blue Ocean
+                </div>
+                <button onclick="localStorage.setItem('theme','blueOcean');location.reload() " >
+                <img id="themeBtn2" src="../../assets/imgs/upcaled/tumb_blue_ocean-transformed.png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select3">Selected</div>
+                </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName">
+                    Sun Set
+                </div>
+                <button onclick="localStorage.setItem('theme','sunsetSerenade'); location.reload()">
+                <img id="themeBtn3" src="../../assets/imgs/upcaled/tumb_sunset-transformed.png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select4">Selected</div>
+                </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName">
+                    Earthy Tones
+                </div>
+                <button onclick="localStorage.setItem('theme','earthyTones'); location.reload()">
+                <img id="themeBtn4" src="../../assets/imgs/upcaled/tumb_earthy_tones-transformed (1).png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select5">Selected</div>
+                </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName">
+                    Mindnight 
+                </div>
+                <button onclick="localStorage.setItem('theme','midnightDreams'); location.reload()">
+                <img id="themeBtn5" src="../../assets/imgs/upcaled/tumb_midnight-transformed.png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select6">Selected</div>
+                </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName">
+                    Golden Sands
+                </div>
+                <button onclick="localStorage.setItem('theme','goldenSands'); location.reload()">
+                <img id="themeBtn6" src="../../assets/imgs/upcaled/tumb_golden_sand-transformed.png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select7">Selected</div>
+                </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName">
+                    Rose Garden
+                </div>
+                <button onclick="localStorage.setItem('theme','roseGarden'); location.reload()">
+                <img id="themeBtn7" src="../../assets/imgs/upcaled/thumb_pink-transformed.png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select8">Selected</div>
+                </div>
+            </button></div>
+            
+            <div class="btn">
+                <div class="themeName">
+                    Monochrome
+                </div>
+                <button onclick="localStorage.setItem('theme','monochromeMinimalism'); location.reload()">
+                <img id="themeBtn8" src="../../assets/imgs/upcaled/thumb_monochrome-transformed.png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select9">Selected</div>
+                </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName">
+                    Autumn 
+                </div>
+                <button onclick="localStorage.setItem('theme','autumnHarvest'); location.reload()">
+                <img id="themeBtn9" src="../../assets/imgs/upcaled/thumb_autumn-transformed (1).png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select10">Selected</div>
+                </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName">
+                    Forgoten Memories
+                </div>
+                <button onclick="localStorage.setItem('theme','forgotenMemories'); location.reload()">
+                <img id="themeBtn10" src="../../assets/imgs/upcaled/memories.png" alt="" draggable="false">
+                <div class="selected">
+                    <div id="select11">Selected</div>
+                </div>
+            </button></div>
+
+            <div class="btn">
+                <div class="themeName more">
+                    Forgoten Memories
+                </div>
+                <button class="moreBtn">
+                <div class="moreTag">
+                    more coming soon..
+                </div>
+            </button></div>
         </div>
     </div>
 

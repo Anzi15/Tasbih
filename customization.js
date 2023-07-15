@@ -5,6 +5,33 @@ const link2 = document.getElementById('link2');
 const link3 = document.getElementById('link3');
 const link4 = document.getElementById('link4');
 
+const themeBtn0 = document.getElementById('themeBtn0');
+const themeBtn1 = document.getElementById('themeBtn1');
+const themeBtn2 = document.getElementById('themeBtn2');
+const themeBtn3 = document.getElementById('themeBtn3');
+const themeBtn4 = document.getElementById('themeBtn4');
+const themeBtn5 = document.getElementById('themeBtn5');
+const themeBtn6 = document.getElementById('themeBtn6');
+const themeBtn7 = document.getElementById('themeBtn7');
+const themeBtn8 = document.getElementById('themeBtn8');
+const themeBtn9 = document.getElementById('themeBtn9');
+const themeBtn10 = document.getElementById('themeBtn10');
+const themeBtn11 = document.getElementById('themeBtn11');
+
+
+const select1 = document.getElementById('select1');
+const select2 = document.getElementById('select2');
+const select3 = document.getElementById('select3');
+const select4 = document.getElementById('select4');
+const select5 = document.getElementById('select5');
+const select6 = document.getElementById('select6');
+const select7 = document.getElementById('select7');
+const select8 = document.getElementById('select8');
+const select9 = document.getElementById('select9');
+const select10 = document.getElementById('select10');
+const select11 = document.getElementById('select11');
+
+
 if(localStorage.getItem('theme')==null){
   localStorage.setItem('theme','default')
 }
@@ -69,44 +96,96 @@ const pureSouls = {
     color: '#92d4be'
   };
   if(theme == 'default'){
-    theme = defaultColors
+    theme = defaultColors;
+    if(document.title == 'Customize'){
+      select1.style.display='block';
+      select1.style.background=theme.priBg;
+      themeBtn0.style.opacity=0.4;
+    }
   }
   if(theme == 'pureSouls'){
-    theme = pureSouls
+    theme = pureSouls;
+    if(document.title == 'Customize'){
+      select2.style.display='block'
+      select2.style.background=theme.priBg;
+      themeBtn1.style.opacity=0.4;
+    }
   }
   if(theme == 'blueOcean'){
     theme = blueOcean;
+    if(document.title == 'Customize'){
+      select3.style.display='block'
+      select3.style.background=theme.priBg;
+      themeBtn2.style.opacity=0.4;
+    }
   }
   if(theme == 'sunsetSerenade'){
-    theme = sunsetSerenade
+    theme = sunsetSerenade;
+    if(document.title == 'Customize'){
+      select4.style.display='block'
+      select4.style.background=theme.priBg;
+      themeBtn3.style.opacity=0.4;
+    }
   }
   if(theme == 'earthyTones'){
-    theme = earthyTones
-    console.log(theme.priBg)
+    theme = earthyTones;
+    if(document.title == 'Customize'){
+      select5.style.display='block'
+      select5.style.background=theme.priBg;
+      themeBtn4.style.opacity=0.4;
+    }
   }
   if(theme == 'midnightDreams'){
-    theme = midnightDreams
+    theme = midnightDreams;
+    if(document.title == 'Customize'){
+      select6.style.display='block'
+      select6.style.background=theme.priBg;
+      themeBtn5.style.opacity=0.4;
+    }
   }
   if(theme == 'goldenSands'){
-    theme = goldenSands
+    theme = goldenSands;
+    if(document.title == 'Customize'){
+      select7.style.display='block'
+      select7.style.background=theme.priBg;
+      themeBtn6.style.opacity=0.4;
+    }
   }
   if(theme == 'roseGarden'){
-    theme = roseGarden
+    theme = roseGarden;
+    if(document.title == 'Customize'){
+      select8.style.display='block'
+      select8.style.background=theme.priBg;
+      themeBtn7.style.opacity=0.4;
+    }
   }
   if(theme == 'monochromeMinimalism'){
-    theme = monochromeMinimalism
+    theme = monochromeMinimalism;
+    if(document.title == 'Customize'){
+      select9.style.display='block'
+      select9.style.background=theme.priBg;
+      themeBtn8.style.opacity=0.4;
+    }
   }
   if(theme == 'autumnHarvest'){
-    theme = autumnHarvest
+    theme = autumnHarvest;
+    if(document.title == 'Customize'){
+      select10.style.display='block';
+      select10.style.background=theme.priBg;
+      themeBtn9.style.opacity=0.4;
+    }
   }
   if(theme == 'forgotenMemories'){
-    theme = forgotenMemories
+    theme = forgotenMemories;
+    if(document.title == 'Customize'){
+      select11.style.display='block'
+      select11.style.background=theme.priBg;
+      themeBtn10.style.opacity=0.4;
+    }
   }
-  
-  console.log(theme)
-  
+
   // setting colors simply
-  if(upBtn !== null){
+  if(document.title == 'Tasbeeh Counter'){
     upBtn.style.transition = 'background-color 0.3s ease';
     upBtn.style.backgroundColor=theme.priBg;
     // setting color transition
@@ -131,16 +210,12 @@ const pureSouls = {
   const themeSvg = upBtn.innerHTML=generateCustomSvg(theme);
 
     }
-
-
-  function linksTheme(c){
-    c.style.color= theme.color;
-  }
-
   function deColor(c){
     c.style.color='white';
   }
+  
 
+if(document.title == 'Hadiths'){
   btn1.style.color=theme.color
   // coolors of hadith navs
   function active(id){
@@ -161,6 +236,9 @@ const pureSouls = {
     document.querySelector('.btns').style.color='white';
     id.style.color = theme.color;
   }
+}
 
   
-
+function linksTheme(c){
+ c.style.color = theme.color
+}

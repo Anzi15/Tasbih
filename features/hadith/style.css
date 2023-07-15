@@ -30,23 +30,21 @@ nav{
     #hadithNav{
         position: absolute;
         top: 0;
+        left: -1 !important;
         z-index: 998;
         display: none;
     }
     .back button:nth-child(2){
+        padding-right: 1rem;
         display: block !important;
     }
     .back{
         justify-content: space-between;
     }
     #textarea{
-        margin-top: 30% !important;
-        padding-top: 4rem;
-        width: auto;
         margin: 0 !important;
-        margin-top: 1rem;
-        padding: 3rem !important;
-        margin: 1rem;
+        padding: 1rem;
+        padding-left: 2rem;
     }
 }
 #hadithNav{
@@ -89,6 +87,7 @@ button{
     padding: 1rem;
 }
 ::-webkit-scrollbar-thumb{
+    margin-top: 4rem;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.507);
 
@@ -98,6 +97,7 @@ button{
 }
 
 ::-webkit-scrollbar{
+    padding: 5rem;
     width: 0.5rem;
     margin: 10px;
     background-color: transparent;
@@ -115,11 +115,8 @@ button{
 
 /* setting text area */
 #textarea{
-
-    /* display: block; */
     height: 99vh;
-    /* padding-top: 2rem; */
-    overflow: scroll;
+    overflow: scroll !important;
     color: white !important;
 }
 #refrence{
@@ -128,11 +125,10 @@ button{
     margin-bottom: 2rem;
 }
 #hadith{
-    height: auto;
     font-family: 'nunito';
     word-spacing: 2.5px;
-
-    
+    overflow: scroll;
+    width: 100%;
 }
 #Container{
     display: flex !important;
@@ -144,10 +140,11 @@ button{
     width: 10rem !important;
 }
 #textarea{
-    width: 35rem;
-    margin: 7rem;    margin: 5rem;
+    width: 35rem; 
+    margin: 5rem;
     height: 100vh;
 }
 #hadith::selection,#refrence::selection{
     background-color: grey;
+    display: none;
 }

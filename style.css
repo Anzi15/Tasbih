@@ -95,14 +95,17 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f8f8f8;
+  background: #262626;
   border-radius: 1rem;
   border: 1px solid #ccc;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  display: none;
+  /* display: none; */
 }
+.alertContent{
+  color: whitesmoke;
 
+}
 #alertOverlay {
   position: fixed;
   top: 0;
@@ -112,7 +115,7 @@ body{
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the blur */
   backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
   z-index: 888; /* Ensure the overlay is on top of other elements */
-  display: none;
+  /* display: none; */
 }
 
 .alertContent {
@@ -136,21 +139,22 @@ body{
 
 /* reset buttons setup */
 .Alertbtn{
+  background: #262626;
   width: inherit;
   display: flex;
   justify-content: flex-end;
 
 }
 #resetAlert{
-display: block;
+display: inline;
 }
 #resetAlert{
-  border: 2px solid #ef233c;
   color: #ef233c;
   background: transparent;
   border-radius: 5px;
   padding: 5px;
   font-weight: 780;
+  width: 100%;
 }
 #resetAlert:hover,#resetAlert:active{
   font-weight: 500; 
