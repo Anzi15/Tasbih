@@ -30,8 +30,9 @@ nav{
     #hadithNav{
         position: absolute;
         top: 0;
-        left: -1 !important;
+        /* left: - !important; */
         z-index: 998;
+        left: 200px;
         display: none;
     }
     .back button:nth-child(2){

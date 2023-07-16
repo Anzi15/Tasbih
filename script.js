@@ -10,8 +10,10 @@ screen.value = localStorage.getItem('dikr');
 btn.addEventListener('click', ()=>{
     count = localStorage.getItem('dikr');
     count++ 
-    screen.value = count
-    localStorage.removeItem('dikr');
+    setTimeout(() => {
+        screen.value = count;
+        
+    }, 600); 
     localStorage.setItem('dikr',count)
 });
 

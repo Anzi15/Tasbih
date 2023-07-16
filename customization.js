@@ -32,6 +32,7 @@ const select10 = document.getElementById('select10');
 const select11 = document.getElementById('select11');
 
 
+const doneBtn = document.getElementById('Done');
 if(localStorage.getItem('theme')==null){
   localStorage.setItem('theme','default')
 }
@@ -238,7 +239,13 @@ if(document.title == 'Hadiths'){
   }
 }
 
+if(document.title == 'Customize'){
+  doneBtn.style.borderColor= theme.priBg;
+  doneBtn.style.color= theme.color;
+
+}
   
 function linksTheme(c){
  c.style.color = theme.color
 }
+

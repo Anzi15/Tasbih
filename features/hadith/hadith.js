@@ -15,11 +15,30 @@ const btn11 = document.getElementById('btn11');
 const btn12 = document.getElementById('btn12');
 const btn13 = document.getElementById('btn13');
 const btn14 = document.getElementById('btn14');
+
+
 function show(){
   nav.style.display = "block";
+  showAni()
+}
+function showAni() {
+  let id = null;
+  const elem = nav;   
+  let pos = -200;
+  clearInterval(id);
+  id = setInterval(frame, 0.2);
+  function frame() {
+    if (pos == 0) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.left = pos + "px"; 
+    }
+  }
 }
 function hide(){
-  nav.style.display = "none";
+
+        nav.style.display = 'none'
 }
 
 const hadiths = [

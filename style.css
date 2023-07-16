@@ -78,16 +78,20 @@ body{
 }
 
 /* reset alert */
+ 
 #resetAlert{
-  z-index: 1000 ;
-  display: flex;
-  position: absolute;
-  left: 7% !important;
-  align-items: center;
-  justify-content: center;
-  transition: all;
-}
+  background-color: #262626;
+  color: rgb(255, 94, 94);
+  border: none;
+  font-size: 1rem;
 
+}
+#Cancel{
+  background-color: #262626;
+  color: whitesmoke;
+  border: none;
+  font-size: 1rem;
+}
 
 #alertCard {
   z-index: 999;
@@ -100,11 +104,23 @@ body{
   border: 1px solid #ccc;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  /* display: none; */
+  display: none;
 }
 .alertContent{
+  user-select: none;
   color: whitesmoke;
-
+}
+.alertContent h3{
+  margin-bottom: 1rem;
+}
+.alertContent p{
+  font-size: large;
+  margin: 1rem;
+}
+p span{
+  margin: 0.7rem;
+  font-size: medium;
+  font-weight: 300;
 }
 #alertOverlay {
   position: fixed;
@@ -115,7 +131,7 @@ body{
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the blur */
   backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
   z-index: 888; /* Ensure the overlay is on top of other elements */
-  /* display: none; */
+  display: none;
 }
 
 .alertContent {
@@ -135,42 +151,4 @@ body{
     width: 60%;
     max-width: 600px;
   }
-}
-
-/* reset buttons setup */
-.Alertbtn{
-  background: #262626;
-  width: inherit;
-  display: flex;
-  justify-content: flex-end;
-
-}
-#resetAlert{
-display: inline;
-}
-#resetAlert{
-  color: #ef233c;
-  background: transparent;
-  border-radius: 5px;
-  padding: 5px;
-  font-weight: 780;
-  width: 100%;
-}
-#resetAlert:hover,#resetAlert:active{
-  font-weight: 500; 
-  background:#EF233C ;
-  color: white;
-}
-#Cancel{
-  border: 2px solid #514F59;
-  color: #514F59;
-  background: transparent;
-  border-radius: 5px;
-  padding: 5px;
-  font-weight: 780;
-}
-#Cancel:hover,#Cancel:active{
-  background:#514F59 ;
-  font-weight: 500;
-  color: white;
 }
