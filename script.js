@@ -1,6 +1,7 @@
 const btn = document.getElementById('up'); // getting elements from doc
 const screen = document.getElementById('screen');
 
+
 let count = 0;
 if(localStorage.getItem('dikr')==null){
     localStorage.setItem('dikr',0)
