@@ -35,6 +35,6 @@ function cancel(){
     document.querySelector('#alertCard').style.display = "none";
 }
 
-if(localStorage.getItem('oldUser')== null){
+if(localStorage.getItem('newUser')== null){
     location.replace('features/wellcome/wellcome.html')
 }

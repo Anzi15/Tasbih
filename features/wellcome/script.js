@@ -10,5 +10,5 @@ function getStarted(){
     link.innerText = `skip for now`
     btn.setAttribute(onclick, "customize()");
     btn.innerHTML = `<a href="../customize/customize.html" class="btnLink"> Customize </a>`
-    localStorage.setItem('oldUser','true')
+    localStorage.setItem('newUser','false')
 }

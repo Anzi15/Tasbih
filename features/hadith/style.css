@@ -48,6 +48,9 @@ nav{
         padding: 1rem;
         padding-left: 2rem;
     }
+    .btns{
+        margin: 2rem 0 !important;
+    }
 }
 #hadithNav{
     margin: 0;
@@ -87,8 +90,6 @@ button{
     display: grid;
     justify-content: center;
     font-size: large;
-    padding: 0, 1rem;
-    margin: 2rem;
 }
 ::-webkit-scrollbar-thumb{
     margin-top: 4rem;
