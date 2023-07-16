@@ -242,7 +242,6 @@ if(document.title == 'Hadiths'){
 if(document.title == 'Customize'){
   doneBtn.style.borderColor= theme.priBg;
   doneBtn.style.color= theme.color;
-
 }
   
 function linksTheme(c){
