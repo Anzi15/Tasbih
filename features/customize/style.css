@@ -44,6 +44,9 @@ button img{
         width: 90vw;
         margin-right: 4vw;
     }
+    nav button{
+        margin: .7rem 1rem!important;
+    }
     .btn{
         margin: 0;
     }
@@ -53,14 +56,14 @@ button img{
     .themeName{
         margin-top: 3rem;
     }
-.moreTag{
-    width: 93vw !important;
-    margin-bottom: 1rem;
-}
-.moreBtn{
-    margin-top: 0;
-    margin-bottom: 4rem;
-}
+    .moreTag{
+        width: 93vw !important;
+        margin-bottom: 1rem;
+    }
+    .moreBtn{
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
   }
 @media (min-width: 350px) {
     button img{

@@ -18,27 +18,12 @@ const btn14 = document.getElementById('btn14');
 
 
 function show(){
-  nav.style.display = "block";
-  showAni()
-}
-function showAni() {
-  let id = null;
-  const elem = nav;   
-  let pos = -200;
-  clearInterval(id);
-  id = setInterval(frame, 0.2);
-  function frame() {
-    if (pos == 0) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.left = pos + "px"; 
-    }
-  }
+  nav.classList.add('show')
+  nav.classList.remove('hide')
 }
 function hide(){
-
-        nav.style.display = 'none'
+  nav.classList.remove('show')
+  nav.classList.add('hide')
 }
 
 const hadiths = [
